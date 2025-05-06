@@ -1,0 +1,10 @@
+#----dev.mtaext-----
+_schema-version: '3.3.0'
+ID: lis-shared-hanacloud.dev
+extends: lis-shared-hanacloud
+
+resources:
+  - name: lis-shared-hanacloud-db
+    parameters:
+      config:
+        database_id: 7cab09bb-a2bc-4888-99ea-6df9b7c1f596

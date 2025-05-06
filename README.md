@@ -35,7 +35,13 @@ cf api https://api.cf.euXX-XXX.hana.ondemand.com
 cf login ...
 cf deploy mta_archives/app.mtar -f
 
-Then you can find the app here:
+in case you want to deploy to a different database:
+
+cf deploy mta_archives/app.mtar -e dev.mtaext 
+
+a working mtaext example can be found [here](dev.mtaext) the database id needs to be adjusted.
+
+Then you can find the service here:
 
 <base url>/odata/v4/catalog/Books
 
